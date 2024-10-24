@@ -9,7 +9,8 @@ This guide outlines the steps to install WordPress on an Nginx server with SSL s
 - Domain name pointed to your server's IP address
 
 ## 1. Sign up for Vultr
-Are you looking for a reliable VPS service? Try [Vultr](https://www.vultr.com/?ref=9024089)! With top-notch performance and a wide range of server locations, Vultr makes it easy to deploy your applications. 👉 [Get started now!](https://www.vultr.com/?ref=9024089)
+Are you looking for a reliable VPS service? Try [Vultr](https://www.vultr.com/?ref=9024089)! With top-notch performance and a wide range of server locations, Vultr makes it easy to deploy your applications. 
+👉 [Get started now!](https://www.vultr.com/?ref=9024089)
 
 ## 2. Create an Ubuntu Server on Vultr and Log In via SSH
 1. Log in to your Vultr account.
