@@ -8,21 +8,32 @@ This guide outlines the steps to install WordPress on an Nginx server with SSL s
 - Access to a terminal
 - Domain name pointed to your server's IP address
 
+## 1. Sign up for Vultr
+Are you looking for a reliable VPS service? Try [Vultr](https://www.vultr.com/?ref=9024089)! With top-notch performance and a wide range of server locations, Vultr makes it easy to deploy your applications. 👉 [Get started now!](https://www.vultr.com/?ref=9024089)
+
+## 2. Create an Ubuntu Server on Vultr and Log In via SSH
+1. Log in to your Vultr account.
+2. Click on "Deploy New Server."
+3. Choose "Ubuntu 22.04" as your server image.
+4. Select your desired server location and plan.
+5. Deploy the server.
+6. Once the server is ready, log in via SSH using the root user.
+
 ## Steps
 
-### 1. Update the Package Index
+### 3. Update the Package Index
 
 ```bash
 sudo apt update
 ```
 
-### 2. Install Nginx
+### 4. Install Nginx
 
 ```bash
 sudo apt install nginx
 ```
 
-### 3. Configure Firewall
+### 5. Configure Firewall
 
 Enable the firewall and allow necessary ports:
 
@@ -34,17 +45,17 @@ sudo ufw allow http # Port 80
 sudo ufw allow https # Port 443
 ```
 
-### 4. Set Up DNS Records
+### 6. Set Up DNS Records
 
 Add an A record for `@` and `www` to your domain pointing to your server's IP address.
 
-### 5. Install Certbot for SSL
+### 7. Install Certbot for SSL
 
 ```bash
 sudo apt install certbot python3-certbot-nginx
 ```
 
-### 6. Configure Nginx for WordPress
+### 8. Configure Nginx for WordPress
 
 Create or edit your Nginx server block configuration:
 
@@ -74,19 +85,19 @@ server {
 }
 ```
 
-### 7. Obtain SSL Certificates
+### 9. Obtain SSL Certificates
 
 ```bash
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 ```
 
-### 8. Install PHP and MySQL
+### 10. Install PHP and MySQL
 
 ```bash
 sudo apt install php-fpm php-mysql
 ```
 
-### 9. Configure PHP-FPM
+### 11. Configure PHP-FPM
 
 Edit the PHP-FPM pool configuration:
 
@@ -106,7 +117,7 @@ Restart PHP-FPM:
 sudo systemctl restart php8.1-fpm
 ```
 
-### 10. Download and Set Up WordPress
+### 12. Download and Set Up WordPress
 
 ```bash
 sudo mkdir -p /var/www/wordpress
@@ -117,7 +128,7 @@ sudo tar -xzvf latest.tar.gz --strip-components=1
 sudo cp wp-config-sample.php wp-config.php
 ```
 
-### 11. Install MySQL and Set Up Database
+### 13. Install MySQL and Set Up Database
 
 ```bash
 sudo apt install mysql-server
@@ -133,7 +144,7 @@ FLUSH PRIVILEGES;
 CREATE DATABASE yourdatabasename;
 ```
 
-### 12. Configure WordPress Database Credentials
+### 14. Configure WordPress Database Credentials
 
 Edit the `wp-config.php` file:
 
