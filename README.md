@@ -130,7 +130,7 @@ Run the following commands in the MySQL shell:
 CREATE USER 'test'@'localhost' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON *.* TO 'test'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
-CREATE DATABASE unminifycode;
+CREATE DATABASE yourdatabasename;
 ```
 
 ### 12. Configure WordPress Database Credentials
@@ -144,7 +144,7 @@ sudo nano wp-config.php
 Set up your database credentials:
 
 ```php
-define( 'DB_NAME', 'unminifycode' );
+define( 'DB_NAME', 'yourdatabasename' );
 define( 'DB_USER', 'test' );
 define( 'DB_PASSWORD', 'your_password' );
 define( 'DB_HOST', 'localhost' );
