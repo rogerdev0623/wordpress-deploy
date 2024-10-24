@@ -156,4 +156,4 @@ Save and close the file.
 
 ## Conclusion
 
-You have successfully installed WordPress on your Nginx server with SSL. You can now visit your domain to complete the WordPress setup through the web interface.
+You have successfully installed WordPress on your Nginx server with SSL. You can now visit your domain at [yourdomain.com](http://yourdomain.com) to complete the WordPress setup through the web interface.
