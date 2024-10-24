@@ -59,8 +59,10 @@ sudo apt install certbot python3-certbot-nginx
 
 ### 8. Configure Nginx for WordPress
 
-Create or edit your Nginx server block configuration:
-
+```
+sudo nano /etc/nginx/sites-available/default
+```
+Add the following to the location part of the server block
 ```nginx
 server {
     listen 80;
