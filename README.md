@@ -13,7 +13,7 @@ If you are looking for a reliable and powerful VPS service, consider [ScalaHosti
 
 👉 [Get started now!](https://www.scalahosting.com/cloud-servers.html#a_aid=rogerphandev&amp;a_bid=5c412908)
 
-## 2. Create an Ubuntu Server on Vultr and Log In via SSH
+## 2. Create an Ubuntu Server on ScalaHosting VPS and Log In via SSH
 1. Log in to your ScalaHosting VPS account.
 2. Click on "Deploy New Server."
 3. Choose "Ubuntu 22.04" as your server image.
