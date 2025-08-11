@@ -8,13 +8,13 @@ This guide outlines the steps to install WordPress on an Nginx server with SSL s
 - Access to a terminal
 - Domain name pointed to your server's IP address
 
-## 1. Sign up for Vultr
-Are you looking for a reliable VPS service? Try [Vultr](https://www.vultr.com/?ref=9024089)! With top-notch performance and a wide range of server locations, Vultr makes it easy to deploy your applications.
+## 1. Sign Up for ScalaHosting VPS
+If you are looking for a reliable and powerful VPS service, consider [ScalaHosting VPS](https://www.scalahosting.com/cloud-servers.html#a_aid=rogerphandev&amp;a_bid=5c412908). Their cloud servers offer high performance, excellent uptime, and easy scalability.
 
-👉 [Get started now!](https://www.vultr.com/?ref=9024089)
+👉 [Get started now!](https://www.scalahosting.com/cloud-servers.html#a_aid=rogerphandev&amp;a_bid=5c412908)
 
 ## 2. Create an Ubuntu Server on Vultr and Log In via SSH
-1. Log in to your Vultr account.
+1. Log in to your ScalaHosting VPS account.
 2. Click on "Deploy New Server."
 3. Choose "Ubuntu 22.04" as your server image.
 4. Select your desired server location and plan.
